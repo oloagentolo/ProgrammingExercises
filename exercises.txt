@@ -1,0 +1,28 @@
+1. Write a program that takes a string input from the user and performs capitalization of the words in
+   accordance with the following rules:
+   
+    a. Always capitalize the first word
+    b. Always capitalize the last word
+    c. Lowercase the following unless (a) or (b): a, the, to, at, in, with, and, but, or
+    d. Uppercase any word not in (c)
+    e. Empty strings don't qualify as words
+
+
+
+2. Write a program that reverses the order of words in a string.  For example, an input string such as
+  "The quick brown fox jumps over the lazy dog." should return
+  "dog. lazy the over jumps fox brown quick The"
+
+3. You are given an array with integers between 1 and 1000000. One of the integers is in the array twice.
+   How can you determine which one?
+
+   Solution: You know the end value of the array, which is 1000000.  Using the series sum formula
+   where 1 + 2 + 3 + .. + n = n(n+1)/2, we can calculate the sum of numbers from 1 to 1000000 without the
+   duplicates.  Let this sum be y.  Let the sum of the given array with a duplicate value be x.  Then when
+   we perform x - y, the result we are left with is the duplicated number in question.
+
+*4. You are given an array of numbers (e.g. { -10, 2, 3, -2, 0, 5, -15 }). Find the largest sum of
+    contiguous numbers in the array. Note that there might be more than one set of contiguous numbers, in
+    which that case you must take the max sum of all sets. A set that contains no contiguous numbers should
+    just return the largest number in the array.
+
